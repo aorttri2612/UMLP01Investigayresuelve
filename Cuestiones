@@ -1,0 +1,37 @@
+#Cuestiones de análisis
+##¿Qué tipo de relación se define entre Pedido y Producto?
+
+Es una composición (rombo negro).
+
+Los productos dependen del pedido.
+
+Si el pedido desaparece, los productos asociados también desaparecen.
+
+##¿Qué significa la cardinalidad?
+
+"1" junto a Pedido → cada producto pertenece a un único pedido.
+
+"0..*" junto a Producto → un pedido puede tener cero o muchos productos.
+
+##Otros tipos de cardinalidad en UML
+
+1..1 → exactamente uno
+Ejemplo: una persona tiene exactamente un DNI
+
+0..1 → opcional
+Ejemplo: un coche puede o no tener remolque
+
+1..* → al menos uno
+Ejemplo: un pedido debe tener al menos un producto
+
+0..* → cero o muchos
+Ejemplo: una biblioteca puede tener cero o muchos libros
+
+n..m → rango definido
+Ejemplo: un equipo de baloncesto tiene entre 5 y 12 jugadores
+
+##Diferencias entre asociación, agregación y composición
+Tipo	Explicación básica	Ejemplo
+Asociación	Relación general; objetos independientes	Profesor → Asignatura
+Agregación	“Tiene un”; objetos pueden existir por separado	Equipo → Jugador
+Composición	“Parte de”; objetos dependen del principal	Pedido → Producto
